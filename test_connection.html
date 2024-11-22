@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Connection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Test Connection</h2>
+        {% if success %}
+            <p class="info-box success">Connection to Webex API is successful!</p>
+        {% else %}
+            <p class="info-box error">Failed to connect to Webex API. Please check your access token.</p>
+        {% endif %}
+        <form method="GET" action="{{ url_for('menu', access_token=access_token) }}">
+            <button type="submit" class="button">Back to Menu</button>
+        </form>
+    </div>
+</body>
+</html>

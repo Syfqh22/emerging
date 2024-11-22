@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('wallpaper.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh; 
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto; 
+    padding: 20px;
+    text-align: center;
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    opacity: 0.9; 
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #AA336A;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.button {
+    background-color: #F8C8DC;
+    color: #953553;
+    border: none;
+    padding: 15px 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FFB6C1;
+}
+
+.logout {
+    background-color: #FF6B6B;
+}
+
+.logout:hover {
+    background-color: #E45858;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #D1BBD7;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #6B4F4F;
+}
+
+.info-box {
+    background-color: #D8BFD8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.back-to-menu-container {
+    margin-top: 20px;
+}
+
+.back-to-menu-container .button {
+    background-color: #D1BBD7;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #953553;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.toggle-button:hover {
+    color: #FA8072;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: #28a745; 
+}
+
+.notification.error {
+    background-color: #dc3545; 
+}
+
+.user-info-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    color: #AA336A;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.info-card {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f8e8f4, #ffe6ea);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+.info-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 20px;
+    color: #953553;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.info-title {
+    font-size: 16px;
+    color: #953553;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.info-data {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+    max-width: 100%; 
+    white-space: normal; 
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: #F8C8DC;
+    color: #953553;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #FFB6C1;
+}
